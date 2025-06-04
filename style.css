@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #00ffe7;
+    box-shadow: 0 0 20px rgba(0, 255, 231, 0.5);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #00ffe7;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffe7;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Seção de Serviços */
+.services {
+    padding: 60px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+    color: #00ffe7;
+    text-shadow: 0 0 5px #00ffe7;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 231, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #00ffe7;
+    font-size: 1.6rem;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Efeito Hover */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 255, 231, 0.3);
+    border-color: #00ffe7;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #00ffe7;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Links dos cards */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card h3 {
+        text-align: center;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+}
