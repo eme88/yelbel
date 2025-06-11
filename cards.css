@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ffe7;
+    box-shadow: 0 0 20px rgba(0, 255, 231, 0.6);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00ffe7;
+    text-shadow: 0 0 12px #00ffe7;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #ccc;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Estilo para o container principal das páginas de serviço */
+section.service-detail {
+    background: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(0, 255, 231, 0.3);
+    max-width: 800px;
+    margin: 40px auto;
+    color: #ccc;
+}
+
+/* Títulos principais */
+section.service-detail h2 {
+    font-size: 2.2rem;
+    color: #00ffe7;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #00ffe7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section.service-detail h3 {
+    font-size: 1.5rem;
+    color: #00c1b8;
+    margin-bottom: 15px;
+    border-left: 4px solid #00ffe7;
+    padding-left: 10px;
+}
+
+/* Texto e listas */
+section.service-detail p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+section.service-detail ul {
+    list-style: inside disc;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+    color: #bbb;
+}
+
+section.service-detail ul li {
+    margin-bottom: 8px;
+}
+
+/* Agrupador dos botões */
+.buttons-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: #00ffe7;
+    color: #0f0f0f;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ffe7;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+    background-color: #00c2b2;
+    color: #fff;
+    box-shadow: 0 0 20px #00c2b2;
+}
+
+/* Botão Voltar */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffe7;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid #00ffe7;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-back:hover {
+    background-color: #00ffe7;
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #111;
+    border-top: 3px solid #00ffe7;
+}
+
+footer p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section.service-detail {
+        padding: 25px 20px;
+        margin: 20px auto;
+    }
+
+    section.service-detail h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-whatsapp, .btn-back {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    /* Empilha botões no mobile */
+    .buttons-group {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+}
